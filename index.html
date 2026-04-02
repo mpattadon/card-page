@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A custom single-page links card.">
+  <title>Blue Links</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-background" aria-hidden="true">
+    <div class="page-background__image" id="page-background"></div>
+    <div class="page-background__wash"></div>
+    <div class="page-background__glow page-background__glow--left"></div>
+    <div class="page-background__glow page-background__glow--right"></div>
+  </div>
+
+  <main class="page-shell">
+    <section class="card" aria-labelledby="profile-name">
+      <div class="card__inner">
+        <header class="profile">
+          <img id="profile-image" class="profile__image" src="assets/profile-placeholder.svg" alt="">
+          <div class="profile__copy">
+            <p id="profile-kicker" class="profile__kicker">Personal hub</p>
+            <h1 id="profile-name" class="profile__name">Blue Links</h1>
+            <p id="profile-headline" class="profile__headline">Everything important in one place.</p>
+          </div>
+        </header>
+
+        <nav id="links" class="links" aria-label="External links"></nav>
+      </div>
+    </section>
+  </main>
+
+  <template id="link-template">
+    <a class="link-row" target="_blank" rel="noreferrer noopener">
+      <span class="link-row__icon" aria-hidden="true"></span>
+      <span class="link-row__body">
+        <span class="link-row__label"></span>
+        <span class="link-row__meta"></span>
+      </span>
+      <span class="link-row__arrow" aria-hidden="true">
+        <svg viewBox="0 0 24 24" role="img" focusable="false">
+          <path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
+        </svg>
+      </span>
+    </a>
+  </template>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

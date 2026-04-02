@@ -1,0 +1,48 @@
+{
+  "theme": {
+    "text": "#e6f1ff",
+    "muted": "#9ab4d6",
+    "accent": "#7bc8ff",
+    "accentStrong": "#2563eb",
+    "surface": "rgba(7, 18, 36, 0.8)",
+    "surfaceStrong": "rgba(10, 24, 48, 0.92)",
+    "surfaceBorder": "rgba(123, 200, 255, 0.16)"
+  },
+  "background": {
+    "image": "assets/background-default.svg",
+    "position": "center"
+  },
+  "profile": {
+    "kicker": "Personal hub",
+    "name": "Your Name",
+    "headline": "A short line about who you are and what you do.",
+    "image": "assets/profile-placeholder.svg",
+    "imageAlt": "Profile portrait"
+  },
+  "links": [
+    {
+      "label": "Portfolio",
+      "href": "https://example.com",
+      "meta": "example.com",
+      "icon": "portfolio"
+    },
+    {
+      "label": "GitHub",
+      "href": "https://github.com/your-handle",
+      "meta": "@your-handle",
+      "icon": "github"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/your-handle",
+      "meta": "linkedin.com/in/your-handle",
+      "icon": "linkedin"
+    },
+    {
+      "label": "Email",
+      "href": "mailto:hello@example.com",
+      "meta": "hello@example.com",
+      "icon": "email"
+    }
+  ]
+}
